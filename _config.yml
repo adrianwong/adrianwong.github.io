@@ -9,6 +9,9 @@ url:                 https://adrianwong.github.io/
 timezone:            Australia/Melbourne
 paginate:            1
 
+# Plugins
+plugins:             [jekyll-paginate]
+
 # About/contact
 author:
   name:              Adrian Wong
