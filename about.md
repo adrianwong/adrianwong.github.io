@@ -3,28 +3,15 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+![Graduation](/assets/images/halloween.jpg)
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Hey there! I'm Adrian, a Melbourne-based software developer currently working for [PaperCut](https://www.papercut.com). In my free time I enjoy reading, playing the guitar, and watching reruns of Bear Grylls' Man vs. Wild.
 
-There are currently two themes built on Poole:
+In a previous life I worked in the coal mines, toiling away with my trusty pickaxe and canary. What inspired me to switch careers was a desire to make a living in a field I've always had a fascination for.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+In here you'll find a collection of stuff I've worked / am working on. Opinions are strictly my own.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+# Contact
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+* [GitHub](https://github.com/adrianwong)
+* [LinkedIn](https://www.linkedin.com/in/adrian-wong-31bab653)
