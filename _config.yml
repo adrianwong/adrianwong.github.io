@@ -17,5 +17,10 @@ author:
   name:              Adrian Wong
   url:               https://adrianwong.github.io/
 
+# Social networks
+social:
+  github:            https://github.com/adrianwong
+  linkedin:          https://www.linkedin.com/in/adrian-wong-31bab653
+
 # Custom vars
 version:             1.0.0
