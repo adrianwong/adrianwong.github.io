@@ -3,11 +3,12 @@ layout: default
 title: Home
 ---
 
-<a href="{{ site.social.github }}" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-<span>&nbsp;</span>
-<a href="{{ site.social.codepen }}" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
-<span>&nbsp;</span>
-<a href="{{ site.social.linkedin }}" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+{% for network in site.networks %}
+  <a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.class }}" aria-hidden="true"></i></a>
+  {% if forloop.last == false %}
+    <span>&nbsp;</span>
+  {% endif %}
+{% endfor %}
 
 <h1>Posts</h1>
 <ul>
