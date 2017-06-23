@@ -10,8 +10,3 @@ Hey there! I'm Adrian, a Melbourne-based software developer currently working fo
 In a previous life I worked in the coal mines, toiling away with my trusty pickaxe and canary. What inspired me to switch careers was a desire to make a living in a field I've always had a fascination for.
 
 In here you'll find a collection of stuff I've worked / am working on. Opinions are strictly my own.
-
-# Contact
-
-* [GitHub](https://github.com/adrianwong)
-* [LinkedIn](https://www.linkedin.com/in/adrian-wong-31bab653)
