@@ -19,11 +19,11 @@ author:
 
 # Networks
 networks:
-  - class:           github fa-2x
+  - name:            github
     url:             https://github.com/adrianwong
-  - class:           codepen fa-2x
+  - name:            codepen
     url:             https://codepen.io/adrianwong/
-  - class:           linkedin fa-2x
+  - name:            linkedin
     url:             https://www.linkedin.com/in/adrian-wong-31bab653
 
 # Custom vars

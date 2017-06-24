@@ -4,7 +4,7 @@ title: Home
 ---
 
 {% for network in site.networks %}
-  <a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.class }}" aria-hidden="true"></i></a>
+  <a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.name }} fa-2x" aria-hidden="true"></i></a>
   {% if forloop.last == false %}
     <span>&nbsp;</span>
   {% endif %}
