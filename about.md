@@ -9,4 +9,4 @@ Hey there! I'm Adrian, a Melbourne-based software developer currently working fo
 
 In a previous life I worked in the coal mines, toiling away with my trusty pickaxe and canary. What inspired me to switch careers was a desire to make a living in a field I've always had a fascination for.
 
-In here you'll find a collection of stuff I've worked / am working on. Opinions are strictly my own.
+In here you'll find write-ups of stuff I've learned / am learning. Opinions, if any, are strictly my own.
