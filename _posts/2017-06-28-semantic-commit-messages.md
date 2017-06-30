@@ -11,7 +11,7 @@ chore: Clean up .gitignore files.
 fix: Fixed incorrect gradle command in Jenkinsfile.
 ```
 
-A cursory Google search yielded this: [Semantic Commit Messages](https://seesparkbox.com/foundry/semantic_commit_messages){:target="_blank"}. In a nutshell, additional structure is imposed on a commit by giving it a type: `chore, docs, feat, fix, refactor, style` or `test`.
+A cursory Google search yielded this: [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages){:target="_blank"}. In a nutshell, additional structure is imposed on a commit by giving it a type: `chore, docs, feat, fix, refactor, style` or `test`.
 
 I thought the motivation behind this was pretty sound, so I gave it a whirl. It's been pretty effective so far - the added rigidity has forced (encouraged?) me to make atomic commits that are (hopefully) more clearly understood. Not a bad thing!
 
