@@ -1,0 +1,57 @@
+---
+layout: page
+title: Projects
+---
+
+<style>
+  .project {
+    border-bottom-style: dashed;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24%;
+    margin-bottom: 15px;
+  }
+  .project:not(:first-of-type) > img {
+    margin-top: 15px;
+  }
+
+  .project > .details {
+    display: inline-block;
+    vertical-align: middle;
+    width: 74%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+  .project:not(:first-of-type) > .details {
+    margin-top: 15px;
+  }
+
+  .project > .details > h3 {
+    margin-top: 0px;
+  }
+</style>
+
+{% for project in site.projects %}
+  <div class="project">
+    <img src="/assets/images/projects/{{ project.img }}">
+    <div class="details">
+      <h3>{{ project.name }}</h3>
+      {% if project.demo %}
+        <a href="{{ site.url }}/{{ project.demo }}">Demo</a>
+      {% endif %}
+      {% if project.demo and project.repo %}
+        <span> &middot; </span>
+      {% endif %}
+      {% if project.repo %}
+        <a href="{{ site.github }}/{{ project.repo }}" target="_blank">Repo</a>
+      {% endif %}
+      <div>{{ project.desc }}</div>
+    </div>
+  </div>
+{% endfor %}
