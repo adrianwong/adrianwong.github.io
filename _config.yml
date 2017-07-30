@@ -1,41 +1,41 @@
 # Permalinks
-permalink:           pretty
+permalink:          pretty
 
 # Setup
-title:               adrianwong
-tagline:             'programmer &middot; retired coal miner'
-description:         '"Programming is like kicking yourself in the face, sooner or later your nose will bleed."'
-url:                 https://adrianwong.github.io
-timezone:            Australia/Melbourne
-paginate:            1
+title:              adrianwong
+tagline:            'programmer &middot; retired coal miner'
+description:        '"Programming is like kicking yourself in the face, sooner or later your nose will bleed."'
+url:                https://adrianwong.github.io
+timezone:           Australia/Melbourne
+paginate:           1
 
 # Plugins
-plugins:             [jekyll-paginate]
+plugins:            [jekyll-paginate]
 
 # About/contact
 author:
-  name:              Adrian Wong
-  url:               https://adrianwong.github.io
+  name:             Adrian Wong
+  url:              https://adrianwong.github.io
 
 # Networks
 networks:
-  - name:            github
-    url:             https://github.com/adrianwong
-  - name:            codepen
-    url:             https://codepen.io/adrianwong/
-  - name:            linkedin
-    url:             https://www.linkedin.com/in/adrian-wong-31bab653
+  - name:           github
+    url:            https://github.com/adrianwong
+  - name:           codepen
+    url:            https://codepen.io/adrianwong/
+  - name:           linkedin
+    url:            https://www.linkedin.com/in/adrian-wong-31bab653
 
 # Repo
-github:              https://github.com/adrianwong
+github:             https://github.com/adrianwong
 
 # Projects
 projects:
-  - name:            React Mario
-    img:             react-mario.png
-    demo:            react-mario
-    repo:            react-mario
-    desc:            First foray into React. Code is probably atrocious.
+  - name:           React Mario
+    img:            react-mario.png
+    demo:           react-mario
+    repo:           react-mario
+    desc:           First foray into React. Code is probably atrocious.
 
 # Custom vars
-version:             1.0.0
+version:            1.0.0
