@@ -26,16 +26,16 @@ networks:
   - name:           linkedin
     url:            https://www.linkedin.com/in/adrian-wong-31bab653
 
-# Repo
-github:             https://github.com/adrianwong
-
 # Projects
 projects:
   - name:           React Mario
     img:            react-mario.png
-    demo:           react-mario
-    repo:           react-mario
     desc:           First foray into React. Code is probably atrocious.
+    links:
+      - type:       Demo
+        url:        https://adrianwong.github.io/react-mario
+      - type:       GitHub
+        url:        https://github.com/adrianwong/react-mario
 
 # Custom vars
 version:            1.0.0

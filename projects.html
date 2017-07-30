@@ -42,15 +42,14 @@ title: Projects
     <img src="/assets/images/projects/{{ project.img }}">
     <div class="details">
       <h3>{{ project.name }}</h3>
-      {% if project.demo %}
-        <a href="{{ site.url }}/{{ project.demo }}">Demo</a>
-      {% endif %}
-      {% if project.demo and project.repo %}
-        <span> &middot; </span>
-      {% endif %}
-      {% if project.repo %}
-        <a href="{{ site.github }}/{{ project.repo }}" target="_blank">Repo</a>
-      {% endif %}
+
+      {% for link in project.links %}
+        <a href="{{ link.url }}" target="_blank">{{ link.type }}</a>
+        {% if forloop.last == false %}
+          <span> &middot; </span>
+        {% endif %}
+      {% endfor %}
+
       <div>{{ project.desc }}</div>
     </div>
   </div>
