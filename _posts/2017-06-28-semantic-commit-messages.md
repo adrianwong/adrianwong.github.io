@@ -23,10 +23,10 @@ I first added a helper function to an existing `.githelpers` file, with very bas
 #!/bin/bash
 
 semantic_commit_message() {
-    if [ -z "$2" ]; then
-        echo "usage: git c${1:0:2} \"[commit_message]\""
-    else
+    if [ -n "$1" ] && [ -n "$2" ]; then
         git commit --message "$1: $2"
+    else
+        echo "usage: semantic_commit_message \"type\" \"message\""
     fi
 }
 ```
@@ -38,13 +38,14 @@ Then I created some aliases in my `.gitconfig` file:
     # Semantic commit messages.
     # Alias convention: 'c' for 'commit', followed by the first
     # two letters of the commit type.
-    cch  = "!. ~/.githelpers && semantic_commit_message chore"
-    cdo  = "!. ~/.githelpers && semantic_commit_message docs"
-    cfe  = "!. ~/.githelpers && semantic_commit_message feat"
-    cfi  = "!. ~/.githelpers && semantic_commit_message fix"
-    cre  = "!. ~/.githelpers && semantic_commit_message refactor"
-    cst  = "!. ~/.githelpers && semantic_commit_message style"
-    cte  = "!. ~/.githelpers && semantic_commit_message test"
+    scm  = "!. ~/.githelpers && semantic_commit_message"
+    cch  = !git scm "chore"
+    cdo  = !git scm "docs"
+    cfe  = !git scm "feat"
+    cfi  = !git scm "fix"
+    cre  = !git scm "refactor"
+    cst  = !git scm "style"
+    cte  = !git scm "test"
 ```
 
 Usage:
