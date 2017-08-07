@@ -7,10 +7,6 @@ tagline:            'programmer &middot; retired coal miner'
 description:        '"Programming is like kicking yourself in the face, sooner or later your nose will bleed."'
 url:                https://adrianwong.github.io
 timezone:           Australia/Melbourne
-paginate:           1
-
-# Plugins
-plugins:            [jekyll-paginate]
 
 # About/contact
 author:
