@@ -1,6 +1,9 @@
 # Permalinks
 permalink:          pretty
 
+# Plugins
+gems:               [jekyll-sitemap]
+
 # Setup
 title:              adrianwong
 tagline:            'programmer &middot; retired coal miner'
