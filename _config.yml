@@ -8,13 +8,13 @@ gems:               [jekyll-sitemap]
 title:              adrianwong
 tagline:            'programmer &middot; retired coal miner'
 description:        '"Programming is like kicking yourself in the face, sooner or later your nose will bleed."'
-url:                https://adrianwong.github.io
+url:                http://adrianwong.pizza
 timezone:           Australia/Melbourne
 
 # About/contact
 author:
   name:             Adrian Wong
-  url:              https://adrianwong.github.io
+  url:              http://adrianwong.pizza
 
 # Networks
 networks:
@@ -32,7 +32,7 @@ projects:
     desc:           First foray into React. Code is probably atrocious.
     links:
       - type:       Demo
-        url:        https://adrianwong.github.io/react-mario
+        url:        http://adrianwong.pizza/react-mario
       - type:       GitHub
         url:        https://github.com/adrianwong/react-mario
 
