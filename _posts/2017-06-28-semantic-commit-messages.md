@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Incorporating semantic commit messages into my git workflow
+redirect_from: /2017/06/28/semantic-commit-messages/
 ---
 
 At work, I recently came across a curiosity while browsing another team's git repository. Their commit messages had these recurring, single-word descriptors that I hadn't seen before. An example:

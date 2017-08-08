@@ -2,7 +2,9 @@
 permalink:          /:categories/:title/
 
 # Plugins
-gems:               [jekyll-sitemap]
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Setup
 title:              adrianwong

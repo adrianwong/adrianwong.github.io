@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello world!
+redirect_from: /2017/06/23/hello-world/
 ---
 
 This site previously served as a portfolio - I actively avoided blogging because I felt that I had nothing valuable to contribute to the already-abundant wealth of programming knowledge on the interwebs.
