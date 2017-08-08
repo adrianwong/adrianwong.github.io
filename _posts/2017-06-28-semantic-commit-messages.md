@@ -39,19 +39,19 @@ Then I created some aliases in my `.gitconfig` file:
     # Semantic commit messages.
     # Alias convention: 'c' for 'commit', followed by the first
     # two letters of the commit type.
-    scm  = "!. ~/.githelpers && semantic_commit_message"
-    cch  = !git scm "chore"
-    cdo  = !git scm "docs"
-    cfe  = !git scm "feat"
-    cfi  = !git scm "fix"
-    cre  = !git scm "refactor"
-    cst  = !git scm "style"
-    cte  = !git scm "test"
+    scm = "!. ~/.githelpers && semantic_commit_message"
+    cch = !git scm "chore"
+    cdo = !git scm "docs"
+    cfe = !git scm "feat"
+    cfi = !git scm "fix"
+    cre = !git scm "refactor"
+    cst = !git scm "style"
+    cte = !git scm "test"
 ```
 
 Usage:
 
-```bash
+```
 $ git cfe "Add semantic commit message aliases"
 [master e189a7a] feat: Add semantic commit message aliases
 
