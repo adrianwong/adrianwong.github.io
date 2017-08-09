@@ -18,14 +18,5 @@ author:
   name:             Adrian Wong
   url:              http://adrianwong.pizza
 
-# Networks
-networks:
-  - name:           github
-    url:            https://github.com/adrianwong
-  - name:           codepen
-    url:            https://codepen.io/adrianwong/
-  - name:           linkedin
-    url:            https://www.linkedin.com/in/adrian-wong-31bab653
-
 # Custom vars
 version:            1.0.0
