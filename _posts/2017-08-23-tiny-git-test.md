@@ -4,7 +4,7 @@ comments: true
 title: A tiny Git test
 ---
 
-```
+```console
 $ mkdir git_test && cd git_test
 
 $ git init
@@ -22,7 +22,7 @@ $ cat .git/refs/heads/master
 2a5edaa5f4ec032c1f996bb7dd3b2c30d6413535
 ```
 
-```
+```console
 $ echo 1 >> test_file && git add -u && git commit -m "c2"
 
 $ git ra
@@ -36,7 +36,7 @@ $ cat .git/refs/heads/master
 e33e034c13c296b2fe1a3a7157fb72349ed659a7
 ```
 
-```
+```console
 $ git branch b1 && git branch b2 && git branch b3
 
 $ git ra
@@ -60,7 +60,7 @@ Conclusion: A branch is just a named reference to a commit. This is important!
 
 (Note: `git ra` is an alias I use for pretty printing all reachable references. See: [dotfiles](https://github.com/adrianwong/dotfiles){:target="_blank"}).
 
-```
+```console
 $ git checkout b1
 $ echo 1 >> test_file && git add -u && git commit -m "c3"
 $ echo 1 >> test_file && git add -u && git commit -m "c4"
@@ -96,7 +96,7 @@ $ cat .git/refs/heads/b3
 c80773e64d8fd6da5e6ddaa41c237c3ea0a0c938
 ```
 
-```
+```console
 $ git branch -D b3
 
 $ ls .git/refs/heads/
@@ -114,7 +114,7 @@ $ git ra
 
 Conclusion: Deleting a branch removes the named reference to a commit. Commits on the deleted branch are therefore unreachable (but may still be recoverable through the `reflog`).
 
-```
+```console
 $ git checkout b2
 $ git tag "some-tag"
 
@@ -139,7 +139,7 @@ $ git ra
 
 Conclusion: A `tag` is also a named reference. A tagged commit is therefore still reachable even if the branch it was on has been deleted. Remember that a branch is just a named reference to a commit.
 
-```
+```console
 $ git checkout master
 $ echo 1 >> test_file_2 && git add -A && git commit -m "c9"
 

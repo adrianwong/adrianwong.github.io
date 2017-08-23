@@ -51,7 +51,7 @@ Then I created some aliases in my `.gitconfig` file:
 
 Usage:
 
-```
+```console
 $ git cfe "Add semantic commit message aliases"
 [master e189a7a] feat: Add semantic commit message aliases
 
