@@ -127,6 +127,9 @@ b1     master
 $ ls .git/refs/tags
 some-tag
 
+$ cat .git/refs/tags/some-tag
+331b18454bca7b3997f52a11a62526c97da01ff4
+
 $ git ra
 * 331b184    <Adrian Wong>   (tag: some-tag) c6
 * 200f821    <Adrian Wong>   c5
