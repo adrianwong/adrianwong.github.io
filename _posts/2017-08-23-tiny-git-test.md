@@ -56,10 +56,6 @@ $ cat .git/refs/heads/b3
 e33e034c13c296b2fe1a3a7157fb72349ed659a7
 ```
 
-Conclusion: A branch is just a named reference to a commit. This is important!
-
-(Note: `git ra` is an alias I use for pretty printing all reachable references. See: [dotfiles](https://github.com/adrianwong/dotfiles){:target="_blank"}).
-
 ```console
 $ git checkout b1
 $ echo 1 >> test_file && git add -u && git commit -m "c3"
@@ -96,6 +92,10 @@ $ cat .git/refs/heads/b3
 c80773e64d8fd6da5e6ddaa41c237c3ea0a0c938
 ```
 
+*Conclusion:* A branch is just a named reference to a commit. This is important!
+
+(*Note:* `git ra` is an alias I use for pretty printing all reachable references. See: [dotfiles](https://github.com/adrianwong/dotfiles){:target="_blank"}).
+
 ```console
 $ git branch -D b3
 
@@ -112,7 +112,7 @@ $ git ra
 * 2a5edaa    <Adrian Wong>   c1
 ```
 
-Conclusion: Deleting a branch removes the named reference to a commit. Commits on the deleted branch are therefore unreachable (but may still be recoverable through the `reflog`).
+*Conclusion:* A branch is just a named reference to a commit. Deleting a branch means deleting that reference. Unless the commit it was referring to, and its ancestors, are reachable via other references, those commits are now unreachable.
 
 ```console
 $ git checkout b2
@@ -140,7 +140,7 @@ $ git ra
 * 2a5edaa    <Adrian Wong>   c1
 ```
 
-Conclusion: A `tag` is also a named reference. A tagged commit is therefore still reachable even if the branch it was on has been deleted. Remember that a branch is just a named reference to a commit.
+*Conclusion:* A branch is just a named reference to a commit. A tag is also just a named reference to a commit. If the tag and the branch refer to the same commit, that commit and its ancestors are reachable via the tag, even if the branch is deleted.
 
 ```console
 $ git checkout master
@@ -186,9 +186,9 @@ parent 9883deca143da271ac33144e4f9242f784826c22
 parent a7a601a03d1aee0d4137510c4b63de8967ee5fba
 ```
 
-Conclusion: Once a target branch is merged into the current branch, all commits on the target branch are reachable (via the merge commit) even if the branch is deleted. Remember that a branch is just a named reference to a commit.
+*Conclusion:* A branch is just a named reference to a commit. The merging of two branches allows the commit the target branch refers to, and its ancestors, to be reachable via the destination branch, even if the target branch is deleted.
 
-Mega conclusion. Repeat the mantra:
+*Mega conclusion:*
 * A branch is just a named reference to a commit.
 * A branch is just a named reference to a commit.
 * A branch is just a named reference to a commit.
