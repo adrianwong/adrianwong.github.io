@@ -1,7 +1,8 @@
 ---
 layout: post
 comments: true
-title: A tiny Git test
+title: A Git branching experiment
+redirect_from: /tiny-git-test/
 ---
 
 ```console
@@ -140,7 +141,7 @@ $ git ra
 * 2a5edaa    <Adrian Wong>   c1
 ```
 
-*Conclusion:* A branch is just a named reference to a commit. A tag is also just a named reference to a commit. If the tag and the branch refer to the same commit, that commit and its ancestors are reachable via the tag, even if the branch is deleted.
+*Conclusion:* A branch is just a named reference to a commit. A tag is also just a named reference to a commit. If a tag and a branch refer to the same commit, that commit and its ancestors are reachable via the tag, even if the branch is deleted.
 
 ```console
 $ git checkout master
