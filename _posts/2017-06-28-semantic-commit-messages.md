@@ -1,11 +1,11 @@
 ---
 layout: post
 comments: true
-title: Incorporating semantic commit messages into my git workflow
+title: Incorporating semantic commit messages into my Git workflow
 redirect_from: /2017/06/28/semantic-commit-messages/
 ---
 
-At work, I recently came across a curiosity while browsing another team's git repository. Their commit messages had these recurring, single-word descriptors that I hadn't seen before. An example:
+At work, I recently came across a curiosity while browsing another team's Git repository. Their commit messages had these recurring, single-word descriptors that I hadn't seen before. An example:
 
 ```
 chore: Clean up .gitignore files.
@@ -16,7 +16,7 @@ A cursory Google search yielded this: [semantic commit messages](https://seespar
 
 I thought the motivation behind this was pretty sound, so I gave it a whirl. It's been pretty effective so far - the added rigidity has forced (encouraged?) me to make atomic commits that are (hopefully) more clearly understood. Not a bad thing!
 
-The write-up below is how I've incorporated semantic commit messages into my git workflow.
+The write-up below is how I've incorporated semantic commit messages into my Git workflow.
 
 I first added a helper function to an existing `.githelpers` file, with very basic error-checking:
 
