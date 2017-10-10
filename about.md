@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![Graduation](/assets/images/halloween.jpg)
+![Halloween](/assets/images/halloween.jpg)
 
 Hey there! I'm Adrian, a Melbourne-based software developer currently working for [PaperCut](https://www.papercut.com){:target="_blank"}. I enjoy reading, playing the guitar, and watching reruns of Bear Grylls' [Man vs. Wild](https://en.wikipedia.org/wiki/Man_vs._Wild){:target="_blank"}.
 
