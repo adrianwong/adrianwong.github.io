@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<style>
+  .exercises {
+    columns: 2;
+    column-gap: 2rem;
+
+    -webkit-columns: 2;
+    -webkit-column-gap: 2rem;
+
+    -moz-columns: 2;
+    -moz-column-gap: 2rem;
+  }
+</style>
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">
+    {{ page.date | date_to_string }}
+    {% include comment-count.html %}
+  </span>
+
+  <h2>Selected exercises</h2>
+  {% assign exercises = page.exercises | remove: ' ' | split: ',' %}
+  <ul class="exercises">
+    {% for exercise in exercises %}
+      {% assign link = exercise | remove: '.' %}
+      <li><a href="#exercise-{{ link }}">{{ exercise }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {{ content }}
+</div>
+
+{% include comments.html %}
