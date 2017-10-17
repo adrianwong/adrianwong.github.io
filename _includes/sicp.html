@@ -1,0 +1,21 @@
+<style>
+  .exercises {
+    columns: 2;
+    column-gap: 2rem;
+
+    -webkit-columns: 2;
+    -webkit-column-gap: 2rem;
+
+    -moz-columns: 2;
+    -moz-column-gap: 2rem;
+  }
+</style>
+
+<h2>Selected exercises</h2>
+{% assign exercises = page.exercises | remove: ' ' | split: ',' %}
+<ul class="exercises">
+  {% for exercise in exercises %}
+    {% assign link = exercise | remove: '.' %}
+    <li><a href="#exercise-{{ link }}">{{ exercise }}</a></li>
+  {% endfor %}
+</ul>
