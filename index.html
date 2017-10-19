@@ -11,10 +11,16 @@ title: Home
 {% endfor %}
 
 <h1>Posts</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> &middot; {{ post.date | date_to_string }}
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  {% assign post_year = post.date | date: "%Y" %}
+  {% if post_year != year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2>{{ post_year }}</h2>
+    <ul>
+    {% assign year = post_year %}
+  {% endif %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> &middot; {{ post.date | date_to_string }}
+  </li>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}
