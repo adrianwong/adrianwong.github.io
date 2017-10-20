@@ -3,6 +3,6 @@
   desc:             First foray into React. Code is probably atrocious.
   links:
     - type:         Demo
-      url:          http://adrianwong.pizza/react-mario
+      url:          https://adrianwong.github.io/react-mario
     - type:         GitHub
       url:          https://github.com/adrianwong/react-mario
