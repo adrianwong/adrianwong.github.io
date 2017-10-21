@@ -5,9 +5,6 @@ title: Home
 
 {% for network in site.data.networks %}
   <a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.name }} fa-3x" aria-hidden="true"></i></a>
-  {% unless forloop.last %}
-    <span>&nbsp;</span>
-  {% endunless %}
 {% endfor %}
 
 <h1>Posts</h1>
