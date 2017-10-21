@@ -1,3 +1,14 @@
+- name:             SVPHM AMS App
+  img:              svphm-ams-app.png
+  desc:             Developed for St. Vincent's Private Hospital Melbourne's Antimicrobial
+                    Stewardship team. Playing a small part in helping reduce antibiotic resistance!
+                    Built with <a href="https://ionicframework.com/" target="_blank">Ionic</a>.
+  links:
+    - type:         Android
+      url:          https://play.google.com/store/apps/details?id=com.adrianwong.svphm.ams_app
+    - type:         iOS
+      url:          https://github.com/svphm-ams/ams-app
+
 - name:             React Mario
   img:              react-mario.png
   desc:             First foray into React. Code is probably atrocious.
