@@ -1,6 +1,4 @@
-- name:             github
+- name:             github-square
   url:              https://github.com/adrianwong
-- name:             codepen
-  url:              https://codepen.io/adrianwong/
-- name:             linkedin
+- name:             linkedin-square
   url:              https://www.linkedin.com/in/adrian-wong-31bab653
