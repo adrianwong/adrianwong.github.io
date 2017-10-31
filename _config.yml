@@ -17,6 +17,3 @@ timezone:           Australia/Melbourne
 author:
   name:             Adrian Wong
   url:              http://adrianwong.pizza
-
-# Custom vars
-version:            1.0.0
