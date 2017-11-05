@@ -12,7 +12,7 @@
 </style>
 
 <h2>Selected exercises</h2>
-{% assign exercises = page.exercises | remove: ' ' | split: ',' %}
+{% assign exercises = include.exercises | remove: ' ' | split: ',' %}
 <ul class="exercises">
   {% for exercise in exercises %}
     {% assign link = exercise | remove: '.' %}
