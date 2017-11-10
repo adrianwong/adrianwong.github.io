@@ -2,7 +2,40 @@
   <script type="text/javascript">
     window.MathJax = {
       TeX: { equationNumbers: { autoNumber: "AMS" } },
-      CommonHTML: { linebreaks: { automatic: true } }
+      AuthorInit: function() {
+        MathJax.Hub.Register.StartupHook("End Typeset", function() {
+          const fullFontSize = 121;
+
+          var renderMath = function() {
+            var mjFormulae = document.getElementsByClassName("mj-formula");
+            if (mjFormulae) {
+              for (var i = 0; i < mjFormulae.length; ++i) {
+                var mjFormula = mjFormulae[i];
+
+                var mjElement = mjFormula.getElementsByClassName("MathJax_CHTML")[0];
+                var mjTable = mjElement.getElementsByClassName("mjx-table")[0];
+
+                var scale = 0.8 * (mjTable ?
+                  mjFormula.offsetWidth / mjTable.offsetWidth :
+                  mjFormula.offsetWidth / mjElement.offsetWidth);
+
+                const oldFontSize = parseInt(mjElement.style.fontSize);
+                var newFontSize = Math.round(Math.min(oldFontSize * scale, fullFontSize));
+                mjElement.style.fontSize = `${newFontSize}%`;
+              }
+            }
+          }
+
+          renderMath();
+
+          var timeoutId;
+          const delay = 250;
+          window.addEventListener("resize", function() {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(renderMath, delay);
+          });
+        });
+      }
     };
   </script>
   <script type="text/javascript" async
