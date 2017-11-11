@@ -28,7 +28,12 @@
   <!-- MathJax -->
   <script type="text/javascript">
     window.MathJax = {
-      TeX: { equationNumbers: { autoNumber: "AMS" } },
+      jax: ["input/TeX", "output/CommonHTML"],
+      extensions: ["tex2jax.js"],
+      TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"]
+      },
       AuthorInit: function() {
         MathJax.Hub.Register.StartupHook("End Typeset", function() {
           const fullFontSize = 121;
@@ -66,7 +71,7 @@
     };
   </script>
   <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js">
   </script>
 
   <!-- RSS -->
