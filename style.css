@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/opensans-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/opensans-700.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #FFFFFF;
+    background-color: #292A2D;
+}
+h2 { margin: 1rem 0; }
+a {
+    color: #FEA14B;
+    text-decoration: none;
+}
+a:hover, a:focus { text-decoration: underline; }
+
+.table { display: table; }
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header { width: 100%; }
+.header > .links { text-align: right; }
+
+.content {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.my-pic > img {
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+}
